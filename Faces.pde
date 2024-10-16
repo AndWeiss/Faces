@@ -56,35 +56,35 @@ int im_position_x, im_position_y, new_imsize_x, new_imsize_y;
 void keyPressed() {
   if (key == 'x') {
     // low frequency factor +
-    factors[0] += 0.01;
+    factors[0] *= 1.1;
   }
   else if(key == 'y'){
    // low frequency factor -
-   factors[0] -= 0.01;
+   factors[0] *= 0.9;
   }
   else if (key == 's') {
     // mid frequency factor +
-    factors[1] += 0.01;
+    factors[1] *= 1.1;
   }
   else if (key == 'a') {
     // mid frequency factor -
-    factors[1] -= 0.01;
+    factors[1] *= 0.9;
   }
   else if (key == 'w') {
     // high frequency factor +
-    factors[2] += 0.01;
+    factors[2] *= 1.1;
   }
   else if (key == 'q') {
     // high frequency factor -
-    factors[2] -= 0.01;
+    factors[2] *= 0.9;
   }  
   else if (key == 'l') {
     // threshold (limit) for new faces +
-    newfacelimit += 0.1;
+    newfacelimit *= 1.1;
   }  
   else if (key == 'k') {
     // threshold (limit) for new faces -
-    newfacelimit -= 0.1;
+    newfacelimit *= 0.9;
   }  
     else if (key == 'f') {
     // overall scaling of all factors +
@@ -118,7 +118,7 @@ void setup()
 {
   //size(1900, 1000,P2D); //FX2D  or P2D
   //size(1000,1000,P2D); 
-  fullScreen(P2D);
+  fullScreen(P2D,SPAN);
   //translate(width/2,height/2);
   //fullScreen(FX2D); //, SPAN);
   noFill();
