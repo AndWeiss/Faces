@@ -34,53 +34,27 @@ mean low freaquency magnitude is exceeded a new base parameter set is chosen.
 
 ### The following parameters can be adjusted by using the following keys, see also *keyPressed.pde*:
 
-	   'x'
-		// low frequency factor +
-		factors[0] *= 1.1;
-	  
-	   'y'
-		// low frequency factor -
-		factors[0] *= 0.9;
-	  
-	   's'
-		// mid frequency factor +
-		factors[1] *= 1.1;
-	  
-	   'a'
-		// mid frequency factor -
-		factors[1] *= 0.9;
-	  
-	   'w'
-		// high frequency factor +
-		factors[2] *= 1.1;
-	  
-	   'q'
-		// high frequency factor -
-		factors[2] *= 0.9;
-	    
-	   'l'
-		// threshold (limit) for new faces +
-		newfacelimit *= 1.1;
-	    
-	   'k'
-		// threshold (limit) for new faces -
-		newfacelimit *= 0.9;
-	    
-	   'f'
-		// overall scaling of all factors +
-		superfac = 1.1;
-		factors = Mat.multiply(factors,superfac);
-		newfacelimit *= superfac;
-	    
-	   'd'
-		// overall scaling of the factors -
-		superfac = 0.9;
-		factors = Mat.multiply(factors,superfac);
-		newfacelimit *= superfac;
-	    
-	   'p'
-		// turns on / off the logarithmic evaluation of the fft
-		log_on = !log_on;
+   'x': low frequency factor (increase)
+  
+   'y': low frequency factor (decrease)
+  
+   's': mid frequency factor (increase)
+  
+   'a': frequency factor (decrease)
+  
+   'w': high frequency factor (increase)
+  
+   'q': high frequency factor (decrease)
+	
+   'l': threshold (limit) for new faces (increase)
+	
+   'k': threshold (limit) for new faces (decrease)
+	
+   'f': overall scaling of all factors (increase)
+	
+   'd': overall scaling of the factors (decrease)
+	
+   'p': turns on / off the logarithmic evaluation of the fft (is off by default)
 
 ## to do: 
 
