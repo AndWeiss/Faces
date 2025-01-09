@@ -40,7 +40,7 @@ mean low freaquency magnitude is exceeded a new base parameter set is chosen.
   
    's': mid frequency factor (increase)
   
-   'a': frequency factor (decrease)
+   'a': mid frequency factor (decrease)
   
    'w': high frequency factor (increase)
   
